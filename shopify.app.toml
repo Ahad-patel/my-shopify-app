@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a71716e07aab8af9d48c4e74db54f191"
+name = "my-project"
+application_url = "https://creative-open-ship-maximum.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "my18demo.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://creative-open-ship-maximum.trycloudflare.com/auth/callback",
+  "https://creative-open-ship-maximum.trycloudflare.com/auth/shopify/callback",
+  "https://creative-open-ship-maximum.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
